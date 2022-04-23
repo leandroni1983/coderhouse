@@ -1,0 +1,261 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0px;
+  font-family: "Roboto", sans-serif;
+  font-size: 1rem;
+}
+.letramenu li a{
+  font-size: 1rem;
+}
+#page {
+  display: grid;
+  width: 100%;
+  height: 900px;
+  grid-template-areas:
+    "article  article article"
+    "head head head"
+    "main main  aside"
+    "foot foot foot";
+  grid-template-rows: 1fr 5fr 1fr;
+  grid-template-columns: 2fr 5fr 2fr;
+}
+
+#page > header {
+  grid-area: head;
+}
+
+#page > section {
+  grid-area: section;
+  /* background-color: #ff8cd9; */
+}
+#page > article {
+  grid-area: article;
+  /* background-color: #1d0101; */
+}
+#page > aside {
+  grid-area: aside;
+  background-color: red;
+  margin: 10px;
+}
+
+#page > main {
+  grid-area: main;
+  /* background-color: #ffff64; */
+}
+
+#page > footer {
+  grid-area: foot;
+  background-color: #8cffa0;
+  margin-top: 25px;
+}
+
+
+/* Header */
+.cabeza {
+  font-size: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.cabezalogo {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.head-nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: linear-gradient(to left, rgba(100, 97, 97, 0.863),white);
+}
+.menu-nav {
+  display: flex;
+  list-style: none;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  gap: 10rem;
+
+}
+
+.menu-nav a:hover {
+  font-size: 1.2rem;
+}
+.mainarea {
+  display: flex;
+  justify-content: space-around;
+}
+
+.items {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 10px;
+}
+
+.asidearea {
+  display: flex;
+  align-items: center;
+}
+/* 
+.caja {
+  background-color: red;
+  height: 200px;
+  width: 200px;
+  margin: 50px;
+  text-align: center;
+  position: relative;
+}
+
+.fondoVerde {
+  background-color: greenyellow;
+  position: absolute;
+  top: 0;
+  right: -20px;
+  padding: 10px 15px;
+}
+
+.caja img {
+  height: 50px;
+  width: 50px;
+  margin: 10px;
+  border-radius: 5px;
+} */
+
+.redes {
+  font-size: 1.5rem;
+  line-height: 1.5;
+}
+
+.redes li {
+  display: inline-block;
+}
+.redes img {
+  width: 50px;
+  height: 50px;
+}
+.mapa {
+  margin: 5px;
+}
+.contacto{
+  display: flex;
+  justify-content: center;
+  align-content: center;
+}
+
+.contacto-form{
+  padding: 1em;
+  margin: 1em;
+  background-color: #ffa08c;
+  box-shadow: 0 0 20px 0 rgba(60, 60, 60, 3);
+}
+
+.contacto-form > *{
+  display: grid;
+  grid-template-columns: 1fr  1fr;
+  width: 100%;
+}
+.contacto-form input,textarea{
+  border: 0;
+  background: none;
+  border-bottom: 1px solid #1d0101;
+}
+
+
+.mensaje{
+  display: flex;
+  flex-direction: column;
+}
+
+
+
+@media (max-width: 1200px) {
+  #page {
+    display: grid;
+    width: 100%;
+    height: 600px;
+    grid-template-areas:
+      "article"
+      "head "
+      "main"
+      "aside"
+      "foot";
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr;
+  }
+
+  .mainarea {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .menu-nav {
+  display: flex;
+  list-style: none;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  gap: 2rem;
+  text-decoration:none;
+}
+}
+
+@media (max-width: 640px) {
+  #page {
+    display: grid;
+    width: 100%;
+    height: 480px;
+    grid-template-areas:
+      "article"
+      "head "
+      "main"
+      "aside"
+      "foot";
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr;
+  }
+  .caja {
+    justify-content: space-between;
+  }
+
+  .mainarea {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .menu-nav {
+    display: flex;
+    list-style: none;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    gap: 1rem;
+    text-decoration:none;
+  }
+}
+
+
+.parallax {
+  background-image: url("https://www.talent-republic.tv/wp-content/uploads/2020/05/1366_2000.jpg");
+  min-height: 500px;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
