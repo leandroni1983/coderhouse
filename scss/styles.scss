@@ -192,7 +192,7 @@
       "aside"
       "foot";
     grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
-    grid-template-columns: 1fr;
+    grid-template-columns: 0.5fr;
   }
 
   .mainarea {
@@ -202,12 +202,12 @@
   }
   .menu-nav {
     display: flex;
+    align-items: center;
     list-style: none;
     justify-content: center;
-    align-items: center;
     flex-direction: row;
-    gap: 1rem;
     text-decoration:none;
+    gap: 0.1rem;
   }
 }
 
