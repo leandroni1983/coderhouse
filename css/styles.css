@@ -54,6 +54,9 @@
   flex-direction: row;
   justify-content: center;
   margin: 5px; }
+  .cabezalogo img {
+    max-width: 480px;
+    max-height: 600px; }
 
 .head-nav {
   display: flex;

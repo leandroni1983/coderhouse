@@ -72,6 +72,10 @@
 .cabezalogo {
   @include centrado();
   margin: 5px;
+  img{
+    max-width: 480px;
+    max-height: 600px;
+  }
 }
 
 
